@@ -1,0 +1,127 @@
+# JavaScript Questions Assignment
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Questions Assignment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #cccccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1565c0;
+        }
+
+        .question {
+            background: #f8faff;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #1565c0;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #1565c0;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0d47a1;
+        }
+
+        .answer {
+            color: #16803c;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>JavaScript Questions Assignment</h1>
+        <p>Student Name: __________________</p>
+        <p>Class: _________________________</p>
+
+        <div class="question">
+            <h3>Question 1: What is JavaScript?</h3>
+            <button onclick="showAnswer(1)">Show Answer</button>
+            <p id="answer1" class="answer"></p>
+        </div>
+
+        <div class="question">
+            <h3>Question 2: What is a variable?</h3>
+            <button onclick="showAnswer(2)">Show Answer</button>
+            <p id="answer2" class="answer"></p>
+        </div>
+
+        <div class="question">
+            <h3>Question 3: What is a function?</h3>
+            <button onclick="showAnswer(3)">Show Answer</button>
+            <p id="answer3" class="answer"></p>
+        </div>
+
+        <div class="question">
+            <h3>Question 4: What is an array?</h3>
+            <button onclick="showAnswer(4)">Show Answer</button>
+            <p id="answer4" class="answer"></p>
+        </div>
+
+        <div class="question">
+            <h3>Question 5: What is the DOM?</h3>
+            <button onclick="showAnswer(5)">Show Answer</button>
+            <p id="answer5" class="answer"></p>
+        </div>
+    </div>
+
+    <script>
+        function showAnswer(number)
+        let answer = "";
+
+        if (number === 1) {
+            answer = "JavaScript is a programming language used to make websites interactive.";
+        }
+        else if (number === 2) {
+            answer = "A variable stores data. Example: let name = 'Ali';";
+        }
+        else if (number === 3) {
+            answer = "A function is a reusable block of code that performs a task.";
+        }
+        else if (number === 4) {
+            answer = "An array stores multiple values in one variable. Example: let fruits = ['Apple', 'Mango'];";
+        }
+        else if (number === 5) {
+            answer = "DOM stands for Document Object Model. It allows JavaScript to change webpage content.";
+        }
+
+        document.getElementById("answer" + number).innerText = answer;
+    }
+    </script>
+
+</body>
+
+</html>
+```
